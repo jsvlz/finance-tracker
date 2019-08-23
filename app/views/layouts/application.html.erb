@@ -20,23 +20,7 @@
   </head>
   <body>
 
-    <div class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <%= link_to "FinanceTracker", root_path, class: "navbar-brand" %>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "My portfolio", my_portfolio_path  %></li>
-            <li><%= link_to "", "/path2"  %></li>
-            <li><%= link_to "", "/path3"  %></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <%= render 'layouts/navigation' %>
 
     <div class="container">
       <div class="row">
@@ -59,7 +43,7 @@
 
       <footer>
         <br>
-        <%= link_to "logout", destroy_user_session_path, method: :delete %>
+
         <p>&copy; Veliz Finance 2019</p>
       </footer>
 

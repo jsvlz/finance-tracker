@@ -22,3 +22,33 @@
 .no-padding{
   padding: 0;
 }
+
+.left-padding{
+  padding-left: 15px !important;
+}
+
+.logout{
+  padding-left: 0;
+}
+
+.user-name{
+  padding-top: 15px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.navbar-default .navbar-brand{
+  margin-top: .03%;
+  text-shadow: red 0 -4px;
+  color: #4A7B92;
+}
+
+.nav.navbar-right li {
+  .btn {
+    background-color: #4A7B92;
+    color: #fff !important;
+    margin-top: 5%;
+  }
+  .btn-logout:hover{
+    background-color: darken(#4A7B92, 20%) !important;
+  }
+}
