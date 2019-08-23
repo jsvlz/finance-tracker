@@ -15,6 +15,9 @@
  *= require_self
  */
 
+@import "font-awesome";
+
+
 .results-block{
   display: inline-block;
 }
@@ -33,12 +36,18 @@
 
 .user-name{
   padding-top: 15px;
+  color: #7A7C7E;
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 .navbar-default .navbar-brand{
   margin-top: .03%;
-  text-shadow: red 0 -4px;
+  font-weight: bold;
+  color: #4A7B92;
+}
+
+.blue{
+  font-weight: bold;
   color: #4A7B92;
 }
 
