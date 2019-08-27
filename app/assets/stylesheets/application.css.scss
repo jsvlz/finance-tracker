@@ -51,10 +51,16 @@
   color: #4A7B92;
 }
 
+.btn-default:hover{
+  background-color: darken(#8B0000, 1%) !important;
+  color: #FFFFFF;
+}
+
+
 .nav.navbar-right li {
   .btn {
     background-color: #4A7B92;
-    color: #fff !important;
+    color: #FFFFFF !important;
     margin-top: 5%;
   }
   .btn-logout:hover{

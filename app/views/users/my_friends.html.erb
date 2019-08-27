@@ -1,1 +1,40 @@
-<h1>Friends</h1>
+<%= render 'friends/lookup' %>
+
+<div id="results">
+  <%= render 'result' %>
+</div>
+
+<% if @friendships.size>0 %>
+  <table class="table table-striped">
+  <!-- Table head -->
+    <thead>
+      <tr>
+
+      </tr>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+  <!-- Table body -->
+    <tbody>
+      <% @friendships.each do |f| %>
+        <tr>
+            <td><%= f.full_name %></td>
+            <td><%= f.email %></td>
+            <td><%= link_to "View profile", user_path(f), class:"btn btn-info btn-xs" %>
+            <%= link_to "Unfriend", friendship_path(f), method: :delete,
+                      data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-default"%>
+            </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <div class="row col-lg-12">
+    <p class="lead">
+      You don't have any friends yet. Try adding add some.
+    </p>
+  </div>
+<% end %>
