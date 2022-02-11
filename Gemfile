@@ -12,7 +12,7 @@ gem 'devise-bootstrap-views'
 gem "stock_quote", '~> 3.0.0'
 gem 'iex-ruby-client'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem "font-awesome-rails"
